@@ -2,9 +2,29 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --border: #dddddd;
+  --muted: #666666;
+  --link: #0066cc;
+  --hover: #f2f2f2;
+}
+
+[data-theme="dark"] {
+  --bg: #111111;
+  --text: #f0f0f0;
+  --border: #333333;
+  --muted: #aaaaaa;
+  --link: #66aaff;
+  --hover: #1c1c1c;
+}
+
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
 }
 
 .topbar {
@@ -12,7 +32,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 16px 24px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--border);
 }
 
 .topbar nav {
@@ -40,7 +60,7 @@ main {
 
 section {
   padding: 40px 0;
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--border);
 }
 
 .stack-group {
@@ -51,7 +71,7 @@ section {
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: #666;
+  color: var(--muted);
   margin-bottom: 6px;
 }
 
@@ -60,7 +80,7 @@ section {
 }
 
 .project {
-  border: 1px solid #ddd;
+  border: 1px solid var(--border);
   border-radius: 6px;
   padding: 20px 24px;
   margin-bottom: 20px;
@@ -72,12 +92,12 @@ section {
 
 .project-desc {
   margin: 0 0 12px;
-  color: #444;
+  color: var(--muted);
 }
 
 .project-tech {
   font-size: 13px;
-  color: #666;
+  color: var(--muted);
   margin: 0 0 14px;
 }
 
@@ -89,7 +109,7 @@ section {
 .project-links a {
   font-size: 14px;
   text-decoration: none;
-  color: #0066cc;
+  color: var(--link);
 }
 
 .project-links a:hover {
@@ -106,12 +126,12 @@ section {
 .contact-links a {
   font-size: 14px;
   text-decoration: none;
-  color: #0066cc;
-  border: 1px solid #ddd;
+  color: var(--link);
+  border: 1px solid var(--border);
   border-radius: 4px;
   padding: 8px 14px;
 }
 
 .contact-links a:hover {
-  background: #f2f2f2;
+  background: var(--hover);
 }
