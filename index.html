@@ -66,9 +66,86 @@
     </section>
 
     <section id="projects">
-      <!-- project cards: link, description, tech stack, github repo -->
-    </section>
+      <h2>Projects</h2>
 
+      <div class="project">
+        <h3>SMD — VTU Payment System</h3>
+      <p class="project-desc">
+        A production fintech application for a paying Nigerian client — a complete VTU
+        (Virtual Top-Up) reseller platform for airtime and data resale, from requirements
+       to live deployment.
+      </p>
+      <p class="project-desc">
+        Integrated the VTPass API for MTN, Airtel, Glo, and 9mobile transactions with
+        idempotent request handling. Built a secure wallet system with bcrypt-hashed
+        transaction PIN, deposit/withdraw methods, and cashback logic. OTP email
+        verification via Gmail SMTP with automatic refunds on API failures. PWA support
+        for a mobile-first experience without an app store.
+      </p>
+      <p class="project-tech">Python, Django, PostgreSQL, Bootstrap, VTPass API, Gmail SMTP, Render</p>
+      <div class="project-links">
+        <a href="https://salisumahadidata.onrender.com/accounts/register/" target="_blank" rel="noopener">Live site</a>
+        <a href="https://github.com/Houzsaad/vtu-payment-system" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>Student Resource Hub</h3>
+      <p class="project-desc">
+        A production-ready REST API platform for Nigerian university students to upload,
+        discover, and download study materials.
+      </p>
+      <p class="project-desc">
+        Custom JWT authentication with role-based access control (Student, Lecturer,
+        Admin), nested categories with full-text search, and a recursive threaded
+        comment system. Applied Factory, Repository, Strategy, and Decorator design
+        patterns, with real-time notifications via Django signals (Observer pattern).
+      </p>
+      <p class="project-tech">Python, Django, Django REST Framework, PostgreSQL, JWT, Render</p>
+      <div class="project-links">
+        <a href="https://student-resource-hub-frontend.vercel.app" target="_blank" rel="noopener">Live site</a>
+        <a href="https://github.com/Houzsaad/student-resource-hub" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>Auction Marketplace API</h3>
+      <p class="project-desc">
+        A timed backend technical assessment (4–8 hrs) delivered in under 3 days: a full
+        auction marketplace REST API with JWT auth, role-based permissions, and a
+        four-rule bidding engine.
+      </p>
+      <p class="project-desc">
+        Token blacklisting for secure logout, custom object-level permission class
+        across listing and bid endpoints, atomic price updates on each valid bid, and
+        lazy auction-closing reused across both the request layer and a management
+        command. Auto-generated Swagger/OpenAPI docs via drf-spectacular.
+      </p>
+      <p class="project-tech">Python, Django, Django REST Framework, JWT, drf-spectacular</p>
+      <div class="project-links">
+        <a href="https://github.com/Houzsaad/auction-marketplace" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+
+  <div class="project">
+    <h3>Savewise</h3>
+    <p class="project-desc">
+      A backend-only locked-savings platform — users lock money toward a chosen date
+      or savings goal, with an early-withdrawal penalty. Built for disciplined saving,
+      not everyday transfers.
+    </p>
+    <p class="project-desc">
+      Custom user model, wallet system, locked savings, and savings goals with
+      contributions. Matured locks and completed goals auto-return funds to the
+      wallet balance. Fully documented in a public Postman workspace.
+    </p>
+    <p class="project-tech">Python, Django, Django REST Framework, PostgreSQL, JWT</p>
+    <div class="project-links">
+      <a href="https://www.postman.com/houzsaad-8621723/workspace/savings-platform-api/collection/51804022-9d7fa873-6264-41bd-be2d-040dc206780c?action=share&source=copy-link&creator=51804022" target="_blank" rel="noopener">Postman docs</a>
+    </div>
+  </div>
+</section>
+  
     <section id="contact">
       <!-- socials + email -->
     </section>

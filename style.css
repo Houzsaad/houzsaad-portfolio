@@ -42,3 +42,56 @@ section {
   padding: 40px 0;
   border-top: 1px solid #eee;
 }
+
+.stack-group {
+  margin-bottom: 20px;
+}
+
+.stack-group h3 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.stack-group p {
+  margin: 0;
+}
+
+.project {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 20px 24px;
+  margin-bottom: 20px;
+}
+
+.project h3 {
+  margin: 0 0 10px;
+}
+
+.project-desc {
+  margin: 0 0 12px;
+  color: #444;
+}
+
+.project-tech {
+  font-size: 13px;
+  color: #666;
+  margin: 0 0 14px;
+}
+
+.project-links {
+  display: flex;
+  gap: 16px;
+}
+
+.project-links a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #0066cc;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
