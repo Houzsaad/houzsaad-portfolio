@@ -234,3 +234,9 @@ section {
   font: inherit;
   cursor: pointer;
 }
+
+@media (max-width: 480px) {
+  .topbar-name {
+    font-size: 14px;
+  }
+}
