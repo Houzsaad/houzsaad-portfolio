@@ -1,6 +1,24 @@
 const toggleButton = document.getElementById('theme-toggle');
 const currentTheme = localStorage.getItem('theme');
 
+const resumeBtn = document.getElementById('resume-btn');
+const resumeModal = document.getElementById('resume-modal');
+const resumeClose = document.getElementById('resume-close');
+
+resumeBtn.addEventListener('click', () => {
+  resumeModal.classList.remove('hidden');
+});
+
+resumeClose.addEventListener('click', () => {
+  resumeModal.classList.add('hidden');
+});
+
+resumeModal.addEventListener('click', (e) => {
+  if (e.target === resumeModal) {
+    resumeModal.classList.add('hidden');
+  }
+});
+
 if (currentTheme === 'dark') {
   document.body.setAttribute('data-theme', 'dark');
   toggleButton.textContent = '☀️';
