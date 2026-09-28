@@ -45,7 +45,21 @@
         </a>
       </div>
 
-      <a href="resume.pdf" target="_blank" class="resume-link">Download Résumé</a>
+      
+      <button id="resume-btn" class="resume-link">Résumé</button>
+
+      <div id="resume-modal" class="modal hidden">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span>Résumé — Huzaifa Sa'ad</span>
+          <div class="modal-actions">
+          <a href="resume.pdf" download>Download</a>
+      <button id="resume-close" aria-label="Close preview">✕</button>
+      </div>
+    </div>
+    <iframe src="resume.pdf" title="Résumé preview"></iframe>
+  </div>
+</div>
     </section>
 
     <section id="stack">
