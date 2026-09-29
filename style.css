@@ -240,3 +240,8 @@ section {
     font-size: 14px;
   }
 }
+
+.visitor-badge {
+  height: 20px;
+  vertical-align: middle;
+}
