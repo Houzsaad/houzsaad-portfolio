@@ -142,23 +142,32 @@
         </div>
 
       <div class="project">
-        <h3>Student Resource Hub</h3>
-        <p class="project-desc">
-          A production-ready REST API platform for Nigerian university students to upload,
-          discover, and download study materials.
-        </p>
-        <p class="project-desc">
-          Custom JWT authentication with role-based access control (Student, Lecturer,
-          Admin), nested categories with full-text search, and a recursive threaded
-          comment system. Applied Factory, Repository, Strategy, and Decorator design
-          patterns, with real-time notifications via Django signals (Observer pattern).
-        </p>
-        <p class="project-tech">Python, Django, Django REST Framework, PostgreSQL, JWT, Render</p>
-        <div class="project-links">
-          <a href="https://student-resource-hub-frontend.vercel.app" target="_blank" rel="noopener">Live site</a>
-          <a href="https://github.com/Houzsaad/student-resource-hub" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </div>
+  <h3>Student Resource Hub</h3>
+  <p class="project-desc">
+    A full-stack platform where Nigerian university students upload, discover, and
+    download past questions and study materials. Live beta with nearly 100 registered
+    students at my university.
+  </p>
+  <p class="project-desc">
+    Built the Django REST API and the React frontend. Features include JWT authentication
+    with role-based permissions, a moderation queue so uploads are reviewed before going
+    public, owner-only edit and delete, ratings, threaded comments, and download tracking.
+    Files are stored on Cloudinary with in-browser PDF preview. Password reset runs on
+    single-use, expiring email links with rate limiting. It ships with light/dark/system
+    themes and installs as a PWA.
+  </p>
+  <p class="project-desc">
+    Backend design uses Factory, Repository, Strategy, and Decorator patterns, with
+    Django signals (Observer) for notifications. Separate staging and production
+    environments, with PostgreSQL backups.
+  </p>
+  <p class="project-tech">Python, Django, Django REST Framework, React, Vite, PostgreSQL, JWT, Cloudinary, Resend, PWA, Render, Vercel</p>
+  <div class="project-links">
+    <a href="https://student-resource-hub-frontend.vercel.app" target="_blank" rel="noopener">Live site</a>
+    <a href="https://github.com/Houzsaad/student-resource-hub" target="_blank" rel="noopener">Backend repo</a>
+    <a href="https://github.com/Houzsaad/student-resource-hub-frontend" target="_blank" rel="noopener">Frontend repo</a>
+  </div>
+</div>
 
       <div class="project">
         <h3>Auction Marketplace API</h3>
