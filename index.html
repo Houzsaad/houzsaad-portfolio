@@ -93,7 +93,37 @@
     <section id="projects">
       <h2>Projects</h2>
 
+
+
       <div class="project">
+
+        <div class="project">
+
+        <h3>VTU App</h3>
+        <p class="project-desc">
+          A full-stack airtime and data reseller platform built as an installable PWA.
+          Users fund a wallet by bank transfer and spend it on airtime and data across
+          Nigerian networks. Tested end to end with real purchases, and built so that
+          money is never lost or credited twice.
+        </p>        
+        <ul class="project-features">
+          <li>Wallet with a ledger: row-locked debits, exactly-once refunds, and a record of every money movement</li>
+          <li>Wallet funding through Paystack Pay with Transfer, with signed webhooks, idempotent crediting, and amount and expiry checks</li>
+          <li>Live airtime and data purchases through the DodoData API; swappable provider layer (VTPass supported) so the supplier can change with one setting</li>
+          <li>Safe handling of unclear provider replies: only explicit failures are refunded, everything else stays pending for manual review</li>
+          <li>Guided data purchase: network, plan type, plan, phone number (contact picker on supported phones), then PIN confirmation</li>
+          <li>JWT authentication, hashed transaction PIN, OTP-based password reset, and rate limiting on sensitive endpoints</li>
+          <li>Admin tools to settle pending transactions, set plan prices and cost, review funding requests, and publish service announcements</li>
+          <li>Transaction history with Successful, Pending, Failed and Refunded states</li>
+          <li>React dashboard, profile, light/dark theme; documented REST API (Swagger)</li>
+        </ul>
+        <p class="project-tech">Python, Django, Django REST Framework, PostgreSQL, React, Vite, JWT, Paystack, DodoData, Render, Vercel</p>
+        <div class="project-links">
+          <a href="https://vtu-mobile-platform.vercel.app" target="_blank" rel="noopener">Live site</a>
+          <a href="https://github.com/Houzsaad/vtu-mobile-platform" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        
+      </div>
         <h3>SMD — VTU Payment System</h3>
         <p class="project-desc">
           A production FinTech application for a paying Nigerian client — a complete VTU
